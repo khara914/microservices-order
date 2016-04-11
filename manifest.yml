@@ -1,0 +1,23 @@
+---
+applications:
+- services:
+  - myMicroservicesSQL
+  - mqLightService
+  name: Microservices-OrdersAPI-kazukiharada914-0408
+  host: Microservices-OrdersAPI-kazukiharada914-0408
+  path: JavaOrdersAPI.war
+  instances: 1
+  memory: 512M
+name: Microservices-OrdersAPI-kazukiharada914-0408
+host: Microservices-OrdersAPI-kazukiharada914-0408
+path: JavaOrdersAPI.war
+domain: mybluemix.net
+instances: 1
+memory: 512M
+declared-services:
+  myMicroservicesSQL:
+    label: sqldb
+    plan: sqldb_free
+  mqLightService:
+    label: mqlight
+    plan: standard
